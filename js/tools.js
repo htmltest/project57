@@ -2,6 +2,19 @@
 
     $(document).ready(function() {
 
+        if (Modernizr.touchevents) {
+            $('.nav > ul > li.with-submenu > a, .types-submenu > ul > li.with-submenu > a').click(function(e) {
+                var curBlock = $(this).parent();
+                if (curBlock.hasClass('open')) {
+                    curBlock.removeClass('open');
+                } else {
+                    $('.nav > ul > li.open, .types-submenu > ul > li.open').removeClass('open');
+                    curBlock.addClass('open');
+                }
+                e.preventDefault();
+            });
+        }
+
         $('.types-menu > a').click(function(e) {
             $('.types-menu').toggleClass('open');
             e.preventDefault();

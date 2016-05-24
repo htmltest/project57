@@ -76,12 +76,16 @@ table.table-2 tbody tr:nth-child(even) td {background:#faf8f5; border-color:#f0e
 .types-submenu > ul {font:1.1em/1.2em "Roboto Condensed", sans-serif}
 .types-submenu > ul > li {margin:-1px 0 0 0; position:relative; border-bottom:1px solid #313131}
 .types-submenu > ul > li > a {display:block; padding:.8em 0 .7em 30px; color:#adaeae; text-decoration:none; position:relative}
-.types-submenu > ul > li:hover > a {color:#fff}
+.no-touchevents .types-submenu > ul > li:hover > a,
+.types-submenu > ul > li.open > a {color:#fff}
 .types-submenu > ul > li > a > span {display:inline-block; vertical-align:middle; width:4px; height:6px; background:url(../images/submenu.png); margin:-2px 0 0 11px}
-.types-submenu > ul > li.with-submenu:hover > a {background:#adaeae}
-.types-submenu > ul > li.with-submenu:hover > a:after {content:""; display:block; width:0; height:0; position:absolute; right:-11px; top:0; border-left:11px solid #adaeae; border-top:1.4em solid transparent; border-bottom:1.4em solid transparent; z-index:2}
+.no-touchevents .types-submenu > ul > li.with-submenu:hover > a,
+.types-submenu > ul > li.open > a {background:#adaeae}
+.no-touchevents .types-submenu > ul > li.with-submenu:hover > a:after,
+.types-submenu > ul > li.open > a:after {content:""; display:block; width:0; height:0; position:absolute; right:-11px; top:0; border-left:11px solid #adaeae; border-top:1.4em solid transparent; border-bottom:1.4em solid transparent; z-index:2}
 .types-submenu > ul > li > ul {display:none; font:.9em/1.2em "Roboto Condensed", sans-serif; position:absolute; left:100%; top:0; width:218px}
-.types-submenu > ul > li:hover > ul {display:block}
+.no-touchevents .types-submenu > ul > li:hover > ul,
+.types-submenu > ul > li.open > ul {display:block}
 .types-submenu > ul > li > ul:before {content:""; display:block; width:218px; height:100%; position:fixed; left:218px; top:0; background:#2f2f2f; box-shadow:6px 0 7px rgba(0, 0, 0, .22), inset 3px 0 7px rgba(0, 0, 0, .16)}
 .types-submenu > ul > li > ul > li {position:relative; padding:14px 0 13px 30px}
 .types-submenu > ul > li > ul > li > a {color:#adaeae; text-decoration:none}
@@ -91,12 +95,16 @@ table.table-2 tbody tr:nth-child(even) td {background:#faf8f5; border-color:#f0e
 .nav > ul {border-top:1px solid #313131; font:1.1em/1.2em "Roboto Condensed", sans-serif}
 .nav > ul > li {margin:-1px 0 0 0; position:relative; border-bottom:1px solid #313131}
 .nav > ul > li > a {display:block; padding:.8em 0 .7em 30px; color:#adaeae; text-decoration:none; position:relative}
-.nav > ul > li:hover > a {color:#fff}
+.no-touchevents .nav > ul > li:hover > a,
+.nav > ul > li.open > a {color:#fff}
 .nav > ul > li > a > span {display:inline-block; vertical-align:middle; width:4px; height:6px; background:url(../images/submenu.png); margin:-2px 0 0 11px}
-.nav > ul > li.with-submenu:hover > a {background:#adaeae}
-.nav > ul > li.with-submenu:hover > a:after {content:""; display:block; width:0; height:0; position:absolute; right:-11px; top:0; border-left:11px solid #adaeae; border-top:1.4em solid transparent; border-bottom:1.4em solid transparent; z-index:2}
+.no-touchevents .nav > ul > li.with-submenu:hover > a,
+.nav > ul > li.open > a {background:#adaeae}
+.no-touchevents .nav > ul > li.with-submenu:hover > a:after,
+.nav > ul > li.open > a:after {content:""; display:block; width:0; height:0; position:absolute; right:-11px; top:0; border-left:11px solid #adaeae; border-top:1.4em solid transparent; border-bottom:1.4em solid transparent; z-index:2}
 .nav > ul > li > ul {display:none; font:.9em/1.2em "Roboto Condensed", sans-serif; position:absolute; left:100%; top:0; width:218px}
-.nav > ul > li:hover > ul {display:block}
+.no-touchevents .nav > ul > li:hover > ul,
+.nav > ul > li.open > ul {display:block}
 .nav > ul > li > ul:before {content:""; display:block; width:218px; height:100%; position:fixed; left:218px; top:0; background:#2f2f2f; box-shadow:6px 0 7px rgba(0, 0, 0, .22), inset 3px 0 7px rgba(0, 0, 0, .16)}
 .nav > ul > li > ul > li {position:relative; padding:14px 0 13px 30px}
 .nav > ul > li > ul > li > a {color:#adaeae; text-decoration:none}
@@ -530,7 +538,7 @@ footer {min-width:762px; padding:0 0 0 218px; background:#2d2d2d; color:#fff; he
 }
 
 #responses .content {padding-bottom:100px}
-#responses footer {padding:0; margin:0; font-size:1em; width:100%}
+#fullpage footer {padding:0; margin:0; font-size:1em; width:100%}
 
 .responses-item {padding:30px 0 0 0}
 .responses-item-text {background:#faf8f5 url(../images/response-text.png) no-repeat center 7px; border-radius:4px; padding:26px 100px 23px 100px}
