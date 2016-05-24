@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>It-дом</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic|Roboto+Condensed:300,400,700|Open+Sans:300&subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/fullpage/jquery.fullpage.css" />
+
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/nouislider/nouislider.min.js"></script>
+        <script src="js/nouislider/wNumb.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/fullpage/jquery.easings.min.js"></script>
+        <script src="js/fullpage/jquery.fullpage.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1024" />
+    </head>
+
+    <body>
+
+        <!-- side -->
+        <div class="side">
+            <div class="logo"><a href="#"><img src="images/logo.png" alt="" width="158" height="33" /></a></div>
+            <div class="title">Профессиональное<br />строительство домов</div>
+
+            <div class="types-menu">
+                <a href="#">Направления</a>
+                <div class="types-menu-list">
+                    <a href="#" class="types-menu-close">Закрыть</a>
+                    <ul class="nobullets">
+                        <li><a href="#"><img src="images/types-menu-1.jpg" alt="" /><span>Каменные дома</span></a></li>
+                        <li><a href="#"><img src="images/types-menu-2.jpg" alt="" /><span>Дома из клееного бруса</span></a></li>
+                        <li><a href="#"><img src="images/types-menu-3.jpg" alt="" /><span>Уникальные дома ручной рубки</span></a></li>
+                        <li><a href="#"><img src="images/types-menu-4.jpg" alt="" /><span>Фахверковые дома</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav">
+                <ul class="nobullets">
+                    <li><a href="#">О компании</a></li>
+                    <li class="with-submenu">
+                        <a href="#">Информация<span></span></a>
+                        <ul class="nobullets">
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Наши партнеры</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Полезная информация</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="side-contacts">
+                <p>e-mail: <a href="#">mail@it-dom.su</a></p>
+                <p>тел.: +7 (843) 239-06-99</p>
+            </div>
+        </div>
+        <!-- side END -->
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- content -->
+                <div class="content">
+                    <div class="content-header content-header-wide">
+                        <h1>Наши <span>Контакты</span></h1>
+
+                        <div class="breadcrumbs">
+                            <div class="breadcrumbs-inner">
+                                <a href="#">Главная</a> <span></span>
+                                Контакты
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Компания «IT-Дом» специализируется на строительстве в Казани. Мы делаем Вашу мечту о собственном доме реальностью! Повседневная практика показывает, что консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+
+                    <!-- contacts info -->
+                    <div class="contacts-info">
+                        <div class="contacts-info-item">
+                            <div class="contacts-info-icon"><img src="images/contacts-icon-1.png" alt="" width="14" height="20" /></div>
+                            <h3>Адрес</h3>
+                            <p>г. Казань, ул. Павлюхина<br />99 Б, оф. №5</p>
+                        </div>
+                        <div class="contacts-info-item">
+                            <div class="contacts-info-icon"><img src="images/contacts-icon-2.png" alt="" width="18" height="18" /></div>
+                            <h3>Телефон</h3>
+                            <p>+7 (843) 239-06-99<br />+7 (937) 775-89-88</p>
+                        </div>
+                        <div class="contacts-info-item">
+                            <div class="contacts-info-icon"><img src="images/contacts-icon-3.png" alt="" width="20" height="19" /></div>
+                            <h3>E-mail</h3>
+                            <p>mail@it-dom.su</p>
+                        </div>
+                        <div class="contacts-info-item">
+                            <div class="contacts-info-icon"><img src="images/contacts-icon-4.png" alt="" width="20" height="20" /></div>
+                            <h3>Время работы</h3>
+                            <p>Пн.-Пт. : 8.00 - 17.00<br />Сб. : 9.00-15.00</p>
+                        </div>
+                    </div>
+                    <!-- contacts info END -->
+
+                    <!-- contacts map -->
+                    <div class="contacts-map">
+                        <div id="map"></div>
+                        <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+                        <script type="text/javascript">
+                            ymaps.ready(init);
+
+                            var myMap;
+
+                            function init () {
+                                myMap = new ymaps.Map('map', {
+                                    center: [56.136, 40.390],
+                                    zoom: 14
+                                });
+
+                                var myGeocoder = ymaps.geocode('г. Казань, ул. Павлюхина, 99 Б');
+                                myGeocoder.then(
+                                    function (res) {
+                                        var coords = res.geoObjects.get(0).geometry.getCoordinates();
+                                        myPlacemark = new ymaps.Placemark(coords, {
+                                            hintContent: 'ул. Павлюхина, 99 Б'
+                                        }, {
+                                            preset: 'islands#blueCircleDotIcon'
+                                        });
+                                        myMap.geoObjects.add(myPlacemark);
+                                        myMap.setCenter(coords);
+                                    },
+                                    function (err) {
+                                        alert('Ошибка');
+                                    }
+                                );
+                            }
+
+                        </script>
+
+                    </div>
+                    <!-- contacts map END -->
+
+                    <!-- contacts form -->
+                    <div class="contacts-form">
+                        <form action="#" method="post">
+                            <div class="contacts-form-cols">
+                                <div class="contacts-form-col">
+                                    <div class="form-input"><input type="text" name="name" value="" placeholder="Ваше имя" class="required" /></div>
+                                    <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш e-mail" class="required email" /></div>
+                                </div>
+
+                                <div class="contacts-form-col">
+                                    <div class="form-input"><textarea name="message" rows="5" cols="10" placeholder="Сообщение" class="required"></textarea></div>
+                                </div>
+                            </div>
+                            <div class="form-submit"><input type="submit" value="Отправить сообщение" /></div>
+                        </form>
+                    </div>
+                    <!-- contacts form END -->
+
+                </div>
+                <!-- content END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <!-- footer contacts -->
+                <div class="footer-contacts">
+                    <div class="footer-contacts-item">
+                        <div class="footer-contacts-title">Мы в интернете</div>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social-vk"></a>
+                            <a href="#" class="footer-social-fb"></a>
+                            <a href="#" class="footer-social-ok"></a>
+                            <a href="#" class="footer-social-mr"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-contacts-item">
+                        <div class="footer-contacts-title">Адрес</div>
+                        <div class="footer-contacts-text">г. Казань, ул. Павлюхина<br />99 Б, оф. №5</div>
+                    </div>
+
+                    <div class="footer-contacts-item">
+                        <div class="footer-contacts-title">Телефон</div>
+                        <div class="footer-contacts-text">+7 (843) 239-06-99<br />+7 (937) 775-89-88</div>
+                    </div>
+
+                    <div class="footer-contacts-item">
+                        <div class="footer-contacts-title">E-MAIL</div>
+                        <div class="footer-contacts-text"><a href="#">mail@it-dom.su</a></div>
+                    </div>
+                </div>
+                <!-- footer contacts END -->
+
+                <div class="copyrights"><span><em>© 2016 It-дом - дом вашей мечты!</em></span></div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
