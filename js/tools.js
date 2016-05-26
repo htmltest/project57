@@ -285,6 +285,28 @@
             }
         });
 
+        $('.complects').each(function() {
+            $('.complect-title').css({'min-height': 0});
+            var maxHeight = 0;
+            $('.complect-title').each(function() {
+                var curHeight = $(this).height();
+                if (curHeight > maxHeight) {
+                    maxHeight = curHeight;
+                }
+            });
+            $('.complect-title').css({'min-height': maxHeight});
+
+            $('.complect-price').css({'min-height': 0});
+            maxHeight = 0;
+            $('.complect-price').each(function() {
+                var curHeight = $(this).height();
+                if (curHeight > maxHeight) {
+                    maxHeight = curHeight;
+                }
+            });
+            $('.complect-price').css({'min-height': maxHeight});
+        });
+
     });
 
     function windowOpen(contentWindow) {
