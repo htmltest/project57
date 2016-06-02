@@ -307,6 +307,12 @@
             $('.complect-price').css({'min-height': maxHeight});
         });
 
+        if ($('.nav').offset().top + $('.nav').outerHeight() > $('.side-contacts').offset().top) {
+            $('.side-contacts').css({'margin-left': -999});
+        } else {
+            $('.side-contacts').css({'margin-left': 0});
+        }
+
     });
 
     function windowOpen(contentWindow) {
